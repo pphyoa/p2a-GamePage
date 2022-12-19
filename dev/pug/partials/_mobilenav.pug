@@ -1,0 +1,22 @@
+.mobile-nav.container 
+       img(src="assets/img/p1.png", alt="")
+       h3 Skin Shop
+       label(for="mob-nav") 
+          i.fas.fa-bars-staggered
+       input(type="checkbox" id="mob-nav" class="mob-nav" name="mob-nav")
+       .mob-nav-wrapper 
+           ul.dropdown-menu 
+           - const mobilenavItem= ["Home","All Heros","Selling Skins","Sign In"]
+           each mobile,i in mobilenavItem
+                if (i == 0)
+                   li 
+                      a(href="#")= mobile 
+                else if (i == 1)
+                   li 
+                      a(href="#")= mobile 
+                else if (i == 2)
+                    li 
+                       a(href="#")= mobile 
+                else 
+                    li 
+                       a(href="#")= mobile

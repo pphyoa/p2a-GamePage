@@ -1,0 +1,55 @@
+
+.mob-nav
+        display: none
+
+.mobile-nav
+        display: none
+        padding-top: 20px
+        align-items: center
+        height: 45px
+        position: relative
+
+        @include MQ("768px")
+            display: flex
+            
+        img
+            width: 40px
+            padding-left: 10px
+
+        h3
+            flex: 1
+            font-size: 25px
+            padding-left: 10px
+
+        i
+            padding-right: 35px
+            font-size: 25px
+            color: #fff
+
+.mob-nav
+    &:checked
+        &+.mob-nav-wrapper
+            transform: scale(1,1)
+.mob-nav-wrapper
+      background-color: #201616
+      min-width: 250px
+      position: absolute
+      right: 0
+      top: 65px
+      transform: scale(1,0)
+
+      li
+        line-height: 45px
+        border-bottom: 1px solid #636060
+
+        &:hover
+            background-color: #474242
+
+        a
+            color: #fff
+            padding-left: 40px
+            transition: 300ms
+
+        &:hover
+            a
+                padding-left: 70px

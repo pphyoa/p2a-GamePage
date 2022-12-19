@@ -1,0 +1,8 @@
+.webnav-slide.container 
+        img(src="assets/img/p1.png", alt="")
+        a(href="#") Skin Shop 
+        ul 
+          - const webnavItem= ["Home","All Heros","Selling Skins","Sign In"]
+            each websitenav in webnavItem
+                li 
+                   a(href="#")= websitenav
