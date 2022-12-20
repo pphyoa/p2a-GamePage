@@ -1,0 +1,59 @@
+
+.tank-data
+    margin-top: 50px
+
+    h3
+        color: #fff
+        font-size: 40px
+        padding: 10px 0 50px 30px
+        letter-spacing: 5px
+
+.tank-heros
+    display: grid
+    grid-template-columns: repeat(5,1fr)
+    grid-gap: 20px
+    padding: 0 10px
+
+    @include MQ("768px")
+         grid-template-columns: repeat(2,1fr)
+         grid-gap: 20px
+         padding: 0 10px
+
+
+    figure 
+        background-color: #0f0635
+        border-radius: 10px
+        height: 200px
+        padding-bottom: 20px
+        transition: all 0.5s ease
+
+        &:hover
+            transform: scale(0.8,0.8)
+
+        
+        img
+            width: 100%
+            height: 80%
+            border-radius: 10px
+
+        figcaption
+            color: #fff
+            font-size: 20px
+            text-align: center
+            padding-top: 20px
+
+button 
+    display: block
+    margin: 50px auto 0
+    padding: 10px 20px
+    background-color: #1e0a4e
+    border: none
+    border-radius: 5px
+    box-shadow: 0px 5px 20px 0px rgba(100,101 ,104 ,0.5 )
+
+    &:hover
+        background-color: #310333
+
+    a
+        color: #fff
+        font-size: 20px

@@ -1,0 +1,13 @@
+section.fighter-data.container
+        .fighter 
+             h3 Fighter Heros 
+        - const fighterItem=[{image:"1.jpg",title:"Fighter Hero-1"},{image:"2.jpg",title:"Fighter Hero-2"},{image:"3.jpg",title:"Fighter Hero-3"},{image:"4.jpg",title:"Fighter Hero-4"},{image:"5.jpg",title:"Fighter Hero-5"},{image:"6.webp",title:"Fighter Hero-6"},{image:"7.jpg",title:"Fighter Hero-7"},{image:"8.jpg",title:"Fighter Hero-8"},{image:"9.jpg",title:"Fighter Hero-9"},{image:"10.jpg",title:"Fighter Hero-10"}]  
+        .fighter-heros 
+             each fighter in fighterItem
+                  figure 
+                      a(href="#") 
+                          img(src=`assets/img/Fighter/${fighter.image}`, alt="")
+                          figcaption= fighter.title
+
+        button 
+             a(href="#") See More...

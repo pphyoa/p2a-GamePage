@@ -1,0 +1,13 @@
+section.tank-data.container#scroll
+        .tank 
+             h3 Tank Heros 
+        - const tankItem=[{image:"1.jpg",title:"Tank Hero-1"},{image:"2.jpg",title:"Tank Hero-2"},{image:"3.jpg",title:"Tank Hero-3"},{image:"4.jpg",title:"Tank Hero-4"},{image:"5.jpg",title:"Tank Hero-5"},{image:"6.jpg",title:"Tank Hero-6"},{image:"7.jpg",title:"Tank Hero-7"},{image:"8.jpg",title:"Tank Hero-8"},{image:"9.webp",title:"Tank Hero-9"},{image:"10.webp",title:"Tank Hero-10"}]  
+        .tank-heros 
+             each tank in tankItem
+                  figure 
+                      a(href="#") 
+                          img(src=`assets/img/Tank/${tank.image}`, alt="")
+                          figcaption= tank.title
+
+        button 
+             a(href="#") See More...

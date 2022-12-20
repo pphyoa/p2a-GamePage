@@ -197,6 +197,13 @@ nav {
   grid-gap: 20px;
   padding: 0 10px;
 }
+@media screen and (max-width: 768px) {
+  .tank-heros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+  }
+}
 .tank-heros figure {
   background-color: #0f0635;
   border-radius: 10px;
@@ -213,6 +220,254 @@ nav {
   border-radius: 10px;
 }
 .tank-heros figure figcaption {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background-color: #1e0a4e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+button:hover {
+  background-color: #310333;
+}
+button a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.fighter-data {
+  margin-top: 50px;
+}
+.fighter-data h3 {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 0 50px 30px;
+  letter-spacing: 5px;
+}
+
+.fighter-heros {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .fighter-heros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+  }
+}
+.fighter-heros figure {
+  background-color: #0f0635;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.fighter-heros figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.fighter-heros figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.fighter-heros figure figcaption {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background-color: #1e0a4e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+button:hover {
+  background-color: #310333;
+}
+button a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.marksman-data {
+  margin-top: 50px;
+}
+.marksman-data h3 {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 0 50px 30px;
+  letter-spacing: 5px;
+}
+
+.marksman-heros {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .marksman-heros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+  }
+}
+.marksman-heros figure {
+  background-color: #0f0635;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.marksman-heros figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.marksman-heros figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.marksman-heros figure figcaption {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background-color: #1e0a4e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+button:hover {
+  background-color: #310333;
+}
+button a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.assassin-data {
+  margin-top: 50px;
+}
+.assassin-data h3 {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 0 50px 30px;
+  letter-spacing: 5px;
+}
+
+.assassin-heros {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .assassin-heros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+  }
+}
+.assassin-heros figure {
+  background-color: #0f0635;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.assassin-heros figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.assassin-heros figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.assassin-heros figure figcaption {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  background-color: #1e0a4e;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+button:hover {
+  background-color: #310333;
+}
+button a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.mage-data {
+  margin-top: 50px;
+}
+.mage-data h3 {
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 0 50px 30px;
+  letter-spacing: 5px;
+}
+
+.mage-heros {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .mage-heros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+  }
+}
+.mage-heros figure {
+  background-color: #0f0635;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.mage-heros figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.mage-heros figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.mage-heros figure figcaption {
   color: #fff;
   font-size: 20px;
   text-align: center;
