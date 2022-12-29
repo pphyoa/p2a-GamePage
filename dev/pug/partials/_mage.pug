@@ -1,13 +1,13 @@
 section.mage-data.container
         .mage 
              h3 Mage Heros 
-        - const mageItem=[{image:"1.webp",title:"Mage Hero-1"},{image:"2.jpg",title:"Mage Hero-2"},{image:"3.jpg",title:"Mage Hero-3"},{image:"4.png",title:"Mage Hero-4"},{image:"5.jpg",title:"Mage Hero-5"},{image:"6.webp",title:"Mage Hero-6"},{image:"7.jpg",title:"Mage Hero-7"},{image:"8.jpg",title:"Mage Hero-8"},{image:"9.jpg",title:"Mage Hero-9"},{image:"10.jpg",title:"Mage Hero-10"}]  
+        - const mageItem=[{image:"1.webp",title:"Kagura"},{image:"2.jpg",title:"Lunox"},{image:"3.jpg",title:"Gord"},{image:"4.png",title:"Vale"},{image:"5.jpg",title:"Harith"},{image:"6.webp",title:"Faramis"},{image:"7.jpg",title:"Cecilion"},{image:"8.jpg",title:"Kadita"},{image:"9.jpg",title:"Eudora"},{image:"10.jpg",title:"Valir"}]  
         .mage-heros 
              each mage in mageItem
                   figure 
-                      a(href="#") 
+                      a(href="allMage.html") 
                           img(src=`assets/img/Mage/${mage.image}`, alt="")
                           figcaption= mage.title
 
         button 
-             a(href="#") See More...
+             a(href="allMage.html") See More...

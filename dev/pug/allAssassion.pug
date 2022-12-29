@@ -1,0 +1,23 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.allAssassion.container 
+        .AssassionHero 
+            h3  Choose Assassion Hero 
+        - const allAssassionItem=[{image:"1.webp",title:"Joy"},{image:"2.jpg",title:"Benedetta"},{image:"3.jpg",title:"Hanzo"},{image:"4.webp",title:"Gusion"},{image:"5.webp",title:"Fanny"},{image:"6.jpg",title:"Ling"},{image:"7.jpg",title:"Lancelot"},{image:"8.jpg",title:"Karina"},{image:"9.jpg",title:"Hayabusa"},{image:"10.jpg",title:"Natalia"},{image:"11.jpg",title:"Helcurt"},{image:"12.jpg",title:"Saber"},{image:"13.jpg",title:"Aamon"},{image:"14.jpg",title:"Alucard"},{image:"15.jpg",title:"Yi Sun-shin"},{image:"16.jpg",title:"Zilong"},{image:"17.jpg",title:"Lesley"},{image:"18.jpg",title:"Selena"},{image:"19.jpg",title:"Mathilda"},{image:"20.png",title:"Kadita"},{image:"21.jpg",title:"Harley"}]
+        .Assassion-hero 
+            each assassion in allAssassionItem
+                figure 
+                    a(href="#") 
+                        img(src=`assets/img/Assassion/${assassion.image}`, alt="")
+                        figcaption= assassion.title
+                        
+
+   include partials/_footer
+
+
+include partials/_base

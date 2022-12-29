@@ -1,0 +1,22 @@
+footer 
+    .footer-inner 
+          - const footerItem=["Home","All Heros","Selling Heros","Sign In"]
+               img(src="assets/img/p1.png", alt="")
+               ul 
+                    h3 Menu Links 
+                    each footer in footerItem 
+                        li 
+                            a(href="#")= footer
+               form
+                    h3 User Login 
+                    input(type="text" placeholder="Username")
+                    input(type="password" placeholder="Password")
+                    button(type="submit") Login
+                 
+    .dev.container 
+               span 
+                    i.fab.fa-facebook 
+                    i.fab.fa-youtube 
+                    i.fab.fa-telegram 
+                    i.fab.fa-instagram 
+               p Copyright @ Developed By Pyae Phyo Aung    

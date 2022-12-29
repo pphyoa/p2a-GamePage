@@ -1,0 +1,364 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.allTank {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allTank h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allTank h3 {
+    font-size: 40px;
+  }
+}
+
+.tank-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .tank-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.tank-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.tank-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.tank-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.tank-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.allFighter {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allFighter h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allFighter h3 {
+    font-size: 40px;
+  }
+}
+
+.fighter-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .fighter-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.fighter-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.fighter-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.fighter-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.fighter-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.allMarksman {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allMarksman h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allMarksman h3 {
+    font-size: 40px;
+  }
+}
+
+.Marksman-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .Marksman-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.Marksman-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.Marksman-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.Marksman-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.Marksman-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.allAssassion {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allAssassion h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allAssassion h3 {
+    font-size: 40px;
+  }
+}
+
+.Assassion-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .Assassion-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.Assassion-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.Assassion-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.Assassion-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.Assassion-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.allMage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allMage h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allMage h3 {
+    font-size: 40px;
+  }
+}
+
+.mage-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .mage-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.mage-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.mage-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.mage-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.mage-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.allSupport {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.allSupport h3 {
+  color: #dba40b;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 30px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .allSupport h3 {
+    font-size: 40px;
+  }
+}
+
+.support-hero {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .support-hero {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10px;
+  }
+}
+.support-hero figure {
+  background-color: #0f0633;
+  border-radius: 10px;
+  height: 200px;
+  padding-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.support-hero figure:hover {
+  transform: scale(0.8, 0.8);
+}
+.support-hero figure img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.support-hero figure figcaption {
+  color: #bdb7f3;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=allTank.css.map */

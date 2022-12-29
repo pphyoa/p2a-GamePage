@@ -1,13 +1,13 @@
 section.marksman-data.container
         .marksman 
              h3 Marksman Heros 
-        - const marksmanItem=[{image:"1.webp",title:"Marksman Hero-1"},{image:"2.jpg",title:"Marksman Hero-2"},{image:"3.jpg",title:"Marksman Hero-3"},{image:"4.jpg",title:"Marksman Hero-4"},{image:"5.jpg",title:"Marksman Hero-5"},{image:"6.jpg",title:"Marksman Hero-6"},{image:"7.jpg",title:"Marksman Hero-7"},{image:"8.jpg",title:"Marksman Hero-8"},{image:"9.jpg",title:"Marksman Hero-9"},{image:"10.jpg",title:"Marksman Hero-10"}]  
+        - const marksmanItem=[{image:"1.webp",title:"Karrie"},{image:"2.jpg",title:"Yi Sun-shin"},{image:"3.jpg",title:"Kimmy"},{image:"4.jpg",title:"Granger"},{image:"5.jpg",title:"Bruno"},{image:"6.jpg",title:"Irithel"},{image:"7.jpg",title:"Wanwan"},{image:"8.jpg",title:"Clint"},{image:"9.jpg",title:"Popol and Kupa"},{image:"10.jpg",title:"Beatrix"}]  
         .marksman-heros 
              each marksman in marksmanItem
                   figure 
-                      a(href="#") 
+                      a(href="allMarksman.html") 
                           img(src=`assets/img/Marksman/${marksman.image}`, alt="")
                           figcaption= marksman.title
 
         button 
-             a(href="#") See More...
+             a(href="allMarksman.html") See More...

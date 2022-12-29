@@ -1,0 +1,37 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.tank-skin.container 
+            .tank-shop 
+                h3 Epic Skins Shop Store 
+            - const tankSkinItem=["ep-1.jpg","ep-2.jpg","ep-3.jpg","ep-5.jpg","ep-6.jpg","ep-7.png","ep-8.jpg","ep-9.jpg","ep-10.jpg","ep-11.png","ep-12.jpeg","el-23.jpg"]
+            .tank-skins-shop 
+                     each tankSkin in tankSkinItem
+                           figure 
+                               img(src=`assets/img/TankSkin/${tankSkin}`, alt="")            
+                               p Price = 20000
+                               span 
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                
+                               a(href="#") 
+                                    button(type="submit") Buy
+
+
+   include partials/_footer
+
+  
+
+include partials/_base

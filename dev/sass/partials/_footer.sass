@@ -1,0 +1,123 @@
+
+footer 
+    background-color: #140202
+    margin-top: 50px
+
+    .footer-inner
+        max-width: 1000px
+        display: grid
+        grid-template-columns: 1fr 1fr 2fr
+        margin: 0 auto
+        padding: 50px 0
+
+        @include MQ("768px")
+            grid-template-columns: 1fr
+
+        img
+            width: 70%
+            margin: 0 auto
+            padding: 30px 0 
+            transform: scale(0.9,0.9)
+            transition: all 0.3s ease
+
+            @include MQ("768px")
+                width: 40%
+
+            &:hover
+                transform: scale(1.1,1.1)
+
+        ul
+            margin: 0 auto 30px
+
+            h3
+                color: #da0b0b
+                font-size: 30px
+                margin-bottom: 10px
+
+            li
+                padding-top: 10px
+
+                a
+                    color: #fff
+                    font-size: 20px
+                    line-height: 30px
+
+        form
+                width: 100%
+                position: relative
+
+
+                h3
+                    color: #da0b0b
+                    font-size: 30px
+                    margin-bottom: 20px
+                    text-align: center
+
+                input
+                    margin: 20px auto 0
+                    color: #180404
+                    padding: 10px 30px
+                    border: none
+                    width: 80%
+                    display: block
+
+                    &:focus
+                        border: none
+                        outline: none
+
+                button
+                    background-color: #3408sf
+                    color: #fff
+                    font-weight: bold
+                    padding: 10px 40px
+                    border: none
+                    font-size: 20px
+
+                    &:hover
+                        background-color: #aa1010
+
+
+.dev
+    // background-color: #5f13ec
+    span
+        color: #fff
+        font-size: 70px
+        text-align: center
+        display: block
+
+        i
+            padding: 0 20px 20px
+            transform: scale(0.7,0.7)
+            transition: all 0.3s ease
+
+            &:hover
+                transform: scale(1,1)
+
+        .fa-facebook
+            background: linear-gradient(135deg, rgba(3,33 ,163 ,0.63 ), rgb(255,0 ,234 ))
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+        .fa-youtube
+            background: linear-gradient(-135deg, #ff0606 , #6f7272)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+        .fa-telegram
+            background: linear-gradient(-135deg, #0630e7 , #05e9dd)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+         
+        .fa-instagram
+            background: linear-gradient(-135deg, #ff050b , #f32156)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+    p
+        color: #f5d4d4
+        padding: 30px 0
+        // margin-bottom: 50px
+        text-align: center
+        font-size: 24px
+        box-shadow: 0 1px 0 #fff inset
+

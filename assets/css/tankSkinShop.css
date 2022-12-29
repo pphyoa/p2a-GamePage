@@ -1,0 +1,120 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tank-skin {
+  margin-top: 60px;
+}
+.tank-skin h3 {
+  color: #dba40b;
+  font-size: 40px;
+  padding: 10px 0 50px 30px;
+  letter-spacing: 5px;
+  margin-top: 30px;
+}
+
+.tank-skins-shop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+.tank-skins-shop figure {
+  height: 250px;
+  background-color: #0f0633;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.tank-skins-shop figure:hover {
+  transform: scale(1.1, 1.1);
+}
+.tank-skins-shop figure img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+.tank-skins-shop figure button {
+  color: #cfc6c6;
+  width: 60%;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+  border: none;
+  font-size: 15px;
+  background-color: #0f0633;
+  box-shadow: 0 4px 8px 0 #191388, 0 6px 20px 0 #170655;
+  transition: all 0.3s ease;
+}
+.tank-skins-shop figure button:hover {
+  transform: scale(0.9, 0.9);
+  background-color: #4b064b;
+}
+.tank-skins-shop figure p {
+  color: #a9a3f0;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.tank-skins-shop figure span i {
+  font-size: 9px;
+  padding-left: 8px;
+  color: #9e9b9b;
+}
+
+/*# sourceMappingURL=tankSkinShop.css.map */

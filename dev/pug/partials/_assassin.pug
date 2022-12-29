@@ -1,13 +1,13 @@
 section.assassin-data.container
         .assassin 
-             h3 Assassin Heros 
-        - const assassinItem=[{image:"1.webp",title:"Assassin Hero-1"},{image:"2.jpg",title:"Assassin Hero-2"},{image:"3.jpg",title:"Assassin Hero-3"},{image:"4.webp",title:"Assassin Hero-4"},{image:"5.webp",title:"Assassin Hero-5"},{image:"6.jpg",title:"Assassin Hero-6"},{image:"7.jpg",title:"Assassin Hero-7"},{image:"8.jpg",title:"Assassin Hero-8"},{image:"9.jpg",title:"Assassin Hero-9"},{image:"10.jpg",title:"Assassin Hero-10"}]  
+             h3 Assassion Heros 
+        - const assassinItem=[{image:"1.webp",title:"Joy"},{image:"2.jpg",title:"Benedetta"},{image:"3.jpg",title:"Hanzo"},{image:"4.webp",title:"Gusion"},{image:"5.webp",title:"Fanny"},{image:"6.jpg",title:"Ling"},{image:"7.jpg",title:"Lancelot"},{image:"8.jpg",title:"Karina"},{image:"9.jpg",title:"Hayabusa"},{image:"10.jpg",title:"Natalia"}]  
         .assassin-heros 
              each assassin in assassinItem
                   figure 
-                      a(href="#") 
+                      a(href="allAssassion.html") 
                           img(src=`assets/img/Assassion/${assassin.image}`, alt="")
                           figcaption= assassin.title
 
         button 
-             a(href="#") See More...
+             a(href="allAssassion.html") See More...

@@ -1,0 +1,23 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.allMarksman.container 
+        .MarksmanHero 
+            h3  Choose Marksman Hero 
+        - const allMarksmanItem=[{image:"1.webp",title:"Karrie"},{image:"2.jpg",title:"Yi Sun-shin"},{image:"3.jpg",title:"Kimmy"},{image:"4.jpg",title:"Granger"},{image:"5.jpg",title:"Bruno"},{image:"6.jpg",title:"Irithel"},{image:"7.jpg",title:"Wanwan"},{image:"8.jpg",title:"Clint"},{image:"9.jpg",title:"Popol and Kupa"},{image:"10.jpg",title:"Beatrix"},{image:"11.jpg",title:"Roger"},{image:"12.jpg",title:"Melissa"},{image:"13.jpg",title:"Hanabi"},{image:"14.jpg",title:"Miya"},{image:"15.jpg",title:"Moskov"},{image:"16.webp",title:"Layla"},{image:"17.jpg",title:"Brody"},{image:"18.jpg",title:"Claude"},{image:"19.jpg",title:"Lesley"},{image:"20.webp",title:"Natan"},{image:"21.png",title:"Edith"}]
+        .Marksman-hero 
+            each marksman in allMarksmanItem
+                figure 
+                    a(href="#") 
+                        img(src=`assets/img/Marksman/${marksman.image}`, alt="")
+                        figcaption= marksman.title
+                        
+
+   include partials/_footer
+
+
+include partials/_base

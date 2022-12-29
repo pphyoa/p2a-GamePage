@@ -1,0 +1,23 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.allMage.container 
+        .mageHero 
+            h3  Choose Mage Hero 
+        - const allMageItem=[{image:"1.webp",title:"Kagura"},{image:"2.jpg",title:"Lunox"},{image:"3.jpg",title:"Gord"},{image:"4.png",title:"Vale"},{image:"5.jpg",title:"Harith"},{image:"6.webp",title:"Faramis"},{image:"7.jpg",title:"Cecilion"},{image:"8.jpg",title:"Kadita"},{image:"9.jpg",title:"Eudora"},{image:"10.jpg",title:"Valir"},{image:"11.webp",title:"Zhask"},{image:"12.jpg",title:"Harley"},{image:"13.png",title:"Valentina"},{image:"14.jpg",title:"Kimmy"},{image:"15.jpg",title:"Aurora"},{image:"16.jpg",title:"Cyclops"},{image:"17.jpg",title:"Pharsa"},{image:"18.jpg",title:"Odette"},{image:"19.jpg",title:"Lylia"},{image:"20.jpg",title:"Bane"},{image:"21.jpg",title:"Chang'e"},{image:"22.jpg",title:"Selena"},{image:"23.jpg",title:"Luo Yi"},{image:"24.jpg",title:"Vexana"},{image:"25.jpg",title:"Yve"},{image:"26.jpg",title:"Xavier"},{image:"27.jpg",title:"Alice"},{image:"28.jpg",title:"Julian"},{image:"30.jpg",title:"Nana"}]
+        .mage-hero 
+            each mage in allMageItem
+                figure 
+                    a(href="#") 
+                        img(src=`assets/img/Mage/${mage.image}`, alt="")
+                        figcaption= mage.title
+                        
+
+   include partials/_footer
+
+
+include partials/_base

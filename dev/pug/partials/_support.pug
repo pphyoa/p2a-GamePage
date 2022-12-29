@@ -1,0 +1,13 @@
+section.support-data.container
+        .support 
+             h3 Support Heros 
+        - const supportItem=[{image:"1.jpg",title:"Mathilda"},{image:"2.png",title:"Carmilla"},{image:"3.jpg",title:"Diggie"},{image:"4.webp",title:"Rafaela"},{image:"5.jpg",title:"Estes"},{image:"6.jpg",title:"Atlas"},{image:"7.jpg",title:"Floryn"},{image:"8.jpg",title:"Faramis"},{image:"9.jpg",title:"Kaja"},{image:"10.jpg",title:"Nana"}]  
+        .support-heros 
+             each support in supportItem
+                  figure 
+                      a(href="allSupport.html") 
+                          img(src=`assets/img/Support/${support.image}`, alt="")
+                          figcaption= support.title
+
+        button 
+             a(href="allSupport.html") See More...

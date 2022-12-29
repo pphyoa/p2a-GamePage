@@ -1,0 +1,24 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.allTank.container 
+        .tankHero 
+            h3  Choose Tank Hero 
+        - const allTankItem=[{image:"1.jpg",title:"Akai"},{image:"2.jpg",title:"Grock"},{image:"3.jpg",title:"Hylos"},{image:"4.jpg",title:"Franco"},{image:"5.jpg",title:"Minotaur"},{image:"6.jpg",title:"Lolita"},{image:"7.jpg",title:"Johnson"},{image:"8.jpg",title:"Belerick"},{image:"9.webp",title:"Khufra"},{image:"10.webp",title:"Hilda"},{image:"11.jpg",title:"Atlas"},{image:"12.jpg",title:"Fredrinn"},{image:"13.jpg",title:"Baxia"},{image:"14.jpg",title:"Gloo"},{image:"15.jpg",title:"Masha"},{image:"16.jpg",title:"Tigreal"},{image:"17.jpg",title:"Esmeralda"},{image:"18.webp",title:"Alice"},{image:"19.jpg",title:"Barats"},{image:"20.jpg",title:"Uranus"},{image:"21.png",title:"Edith"},{image:"22.jpg",title:"Ruby"},{image:"23.jpg",title:"Gatotkaca"}]
+        .tank-hero 
+            each tank in allTankItem
+                figure 
+                    a(href="tankSkinShop.html") 
+                        img(src=`assets/img/Tank/${tank.image}`, alt="")
+                        figcaption= tank.title
+                        
+
+   include partials/_footer
+
+  
+
+include partials/_base

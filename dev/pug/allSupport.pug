@@ -1,0 +1,23 @@
+
+include partials/_top
+
+ nav 
+   include partials/_mobilenav
+   include partials/_webnav
+
+   section.allSupport.container 
+        .supportHero 
+            h3  Choose Support Hero 
+        - const allSupportItem=[{image:"1.jpg",title:"Mathilda"},{image:"2.png",title:"Carmilla"},{image:"3.jpg",title:"Diggie"},{image:"4.webp",title:"Rafaela"},{image:"5.jpg",title:"Estes"},{image:"6.jpg",title:"Atlas"},{image:"7.jpg",title:"Floryn"},{image:"8.jpg",title:"Faramis"},{image:"9.jpg",title:"Kaja"},{image:"10.jpg",title:"Nana"},{image:"11.jpg",title:"Angela"},{image:"12.jpg",title:"Franco"},{image:"13.jpg",title:"Tigreal"},{image:"14.jpg",title:"Minotaur"},{image:"15.jpg",title:"Akai"},{image:"16.webp",title:"Khufra"}]
+        .support-hero 
+            each support in allSupportItem
+                figure 
+                    a(href="#") 
+                        img(src=`assets/img/Support/${support.image}`, alt="")
+                        figcaption= support.title
+                        
+
+   include partials/_footer
+
+
+include partials/_base

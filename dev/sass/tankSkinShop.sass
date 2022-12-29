@@ -1,0 +1,65 @@
+@use 'modules/_base'
+@import 'partials/_mixin'
+
+
+.tank-skin
+    margin-top: 60px
+
+    h3
+        color: #dba40b
+        font-size: 40px
+        padding: 10px 0 50px 30px
+        letter-spacing: 5px
+        margin-top: 30px
+
+.tank-skins-shop 
+    display: grid
+    grid-template-columns: repeat(6,1fr)
+    grid-column-gap: 20px
+    grid-row-gap: 30px
+    padding: 0 10px
+    margin-bottom: 60px
+
+    figure
+        height: 250px
+        background-color: #0f0633
+        border-radius: 10px
+        padding-bottom: 20px
+        transition: all 0.3s ease
+
+        &:hover
+            transform: scale(1.1,1.1)
+
+        img
+            width: 100%
+            height: 70%
+            border-radius: 10px
+
+        button
+            color: #cfc6c6
+            width: 60%
+            height: 40px
+            text-align: center
+            margin-top: 10px
+            border: none
+            font-size: 15px
+            background-color: #0f0633
+            box-shadow: 0 4px 8px 0 #191388 , 0 6px 20px 0 #170655
+            transition: all 0.3s ease
+
+            &:hover
+                transform: scale(0.9,0.9)
+                background-color: #4b064b
+
+        p
+            color: #a9a3f0
+            font-size: 20px
+            text-align: center
+            padding-top: 10px
+
+        span
+            i
+                font-size: 9px
+                padding-left: 8px
+                color: #9e9b9b
+
