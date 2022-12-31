@@ -6,13 +6,13 @@ include partials/_top
    include partials/_webnav
 
    section.allFighter.container 
-        .fighterHero 
+        .allFighter
             h3  Choose Fighter Hero 
         - const allFighterItem=[{image:"1.jpg",title:"Minsithar"},{image:"2.jpg",title:"Alpha"},{image:"3.jpg",title:"Lapu-Lapu"},{image:"4.jpg",title:"Yin"},{image:"5.jpg",title:"Silvanna"},{image:"6.webp",title:"Guinevere"},{image:"7.jpg",title:"Roger"},{image:"8.jpg",title:"Sun"},{image:"9.jpg",title:"Khaleed"},{image:"10.jpg",title:"Martis"},{image:"11.jpg",title:"Julian"},{image:"12.jpg",title:"Yu Zhong"},{image:"13.jpg",title:"Dyrroth"},{image:"14.jpg",title:"Aldous"},{image:"15.jpg",title:"Alucard"},{image:"16.jpg",title:"Terizla"},{image:"17.jpg",title:"X.Borg"},{image:"18.jpg",title:"Argus"},{image:"19.jpg",title:"Zilong"},{image:"20.webp",title:"Hilda"},{image:"21.jpg",title:"Fredrinn"},{image:"22.jpg",title:"Freya"},{image:"23.jpg",title:"Bane"},{image:"24.jpg",title:"Masha"},{image:"25.webp",title:"Jawhead"},{image:"26.webp",title:"Kaja"},{image:"27.jpg",title:"Aulus"},{image:"28.jpg",title:"Badang"},{image:"29.jpg",title:"Balmond"},{image:"30.jpg",title:"Barats"},{image:"31.jpg",title:"Paquito"},{image:"32.jpg",title:"Thamuz"},{image:"33.jpg",title:"Leomord"},{image:"34.jpg",title:"Chou"},{image:"35.webp",title:"Phoveus"},{image:"36.jpg",title:"Ruby"},{image:"37.jpg",title:"Gatotkace"}]
         .fighter-hero 
             each fighter in allFighterItem
                 figure 
-                    a(href="#") 
+                    a(href="fighterSkinShop.html") 
                         img(src=`assets/img/Fighter/${fighter.image}`, alt="")
                         figcaption= fighter.title
                         

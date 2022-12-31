@@ -1,0 +1,332 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paymentSkin {
+  padding-top: 150px;
+}
+
+.paymentShop {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .paymentShop {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leftPayment img {
+  width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .leftPayment img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+.leftPayment h3 {
+  color: #f1b40a;
+  font-size: 30px;
+  padding: 30px 10px;
+}
+@media screen and (max-width: 768px) {
+  .leftPayment h3 {
+    text-align: center;
+  }
+}
+.leftPayment p {
+  color: #d4d1d1;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 30px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .leftPayment p {
+    display: none;
+  }
+}
+
+.rightPayment .first-process {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f7f0f0;
+  border-radius: 10px;
+}
+.rightPayment .first-process h1 {
+  background-color: #330a94;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
+  position: relative;
+  top: -20px;
+  border: 5px solid #f7f0f0;
+}
+.rightPayment .first-process h3 {
+  padding-left: 100px;
+  font-size: 30px;
+  position: relative;
+  top: -50px;
+}
+.rightPayment .first-process .userId {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -70px;
+}
+.rightPayment .first-process .userId button {
+  width: 300px;
+  background-color: #fff;
+  font-size: 25px;
+  font-style: italic;
+  opacity: 0.5;
+}
+.rightPayment .first-process p {
+  font-size: 20px;
+  padding: 0 20px;
+  text-align: justify;
+  position: relative;
+  top: -50px;
+}
+.rightPayment .second-process {
+  width: 90%;
+  margin: 40px auto;
+  background-color: #f7f0f0;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.rightPayment .second-process h1 {
+  background-color: #330a94;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
+  position: relative;
+  top: -20px;
+  border: 5px solid #f7f0f0;
+}
+.rightPayment .second-process h3 {
+  position: relative;
+  top: -50px;
+  padding-left: 100px;
+  font-size: 30px;
+}
+.rightPayment .second-process .wavepay {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+  border-radius: 10px;
+  display: flex;
+}
+.rightPayment .second-process .wavepay img {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+}
+.rightPayment .second-process .wavepay p {
+  text-align: end;
+  font-size: 30px;
+  padding: 20px;
+  flex: 1;
+}
+.rightPayment .second-process .mptpay {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+  border-radius: 10px;
+  display: flex;
+}
+.rightPayment .second-process .mptpay img {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+}
+.rightPayment .second-process .mptpay p {
+  text-align: end;
+  font-size: 30px;
+  padding: 20px;
+  flex: 1;
+}
+.rightPayment .second-process .atompay {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+  border-radius: 10px;
+  display: flex;
+}
+.rightPayment .second-process .atompay img {
+  width: 200px;
+  height: 70px;
+  padding: 10px 20px;
+}
+.rightPayment .second-process .atompay p {
+  text-align: end;
+  font-size: 30px;
+  padding: 20px;
+  flex: 1;
+}
+.rightPayment .second-process .ooredoopay {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 0;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+  border-radius: 10px;
+  display: flex;
+}
+.rightPayment .second-process .ooredoopay img {
+  width: 200px;
+  height: 70px;
+  padding: 10px 20px;
+}
+.rightPayment .second-process .ooredoopay p {
+  text-align: end;
+  font-size: 30px;
+  padding: 20px;
+  flex: 1;
+}
+.rightPayment .third-process {
+  width: 90%;
+  margin: 40px auto;
+  background-color: #f7f0f0;
+  border-radius: 10px;
+}
+.rightPayment .third-process h1 {
+  background-color: #330a94;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
+  position: relative;
+  top: -20px;
+  border: 5px solid #f7f0f0;
+}
+.rightPayment .third-process h3 {
+  position: relative;
+  top: -50px;
+  padding-left: 100px;
+  font-size: 30px;
+}
+.rightPayment .third-process input {
+  font-size: 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 0 20px 30px;
+  background-color: #f7f0f0;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+.rightPayment .fourth-process {
+  width: 90%;
+  margin: 40px auto;
+  background-color: #f7f0f0;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+.rightPayment .fourth-process h1 {
+  background-color: #330a94;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 20px;
+  border-radius: 50px;
+  position: relative;
+  top: -20px;
+  border: 5px solid #f7f0f0;
+}
+.rightPayment .fourth-process h3 {
+  position: relative;
+  top: -50px;
+  padding-left: 100px;
+  font-size: 30px;
+}
+.rightPayment .fourth-process input {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 25px;
+  padding: 15px;
+  box-shadow: 0px 5px 20px 0px rgba(100, 101, 104, 0.5);
+}
+
+/*# sourceMappingURL=payment.css.map */

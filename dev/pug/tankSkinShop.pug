@@ -23,12 +23,100 @@ include partials/_top
                                    i.fa.fa-star
                                    i.fa.fa-star
                                    i.fa.fa-star
+                                  
+                                 
+                                
+                               a(href="payment.html") 
+                                    button(type="submit") Buy
+
+
+            .tank-shop 
+                h3 Elite Skins Shop Store 
+            - const eliteSkinItem=["el-1.jpg","el-22.jpg","el-3.jpg","el-5.jpg","el-6.jpg","el-7.jpg","el-8.jpg","el-9.jpg","el-10.jpg","el-11.jpg","el-12.jpg","el-13.jpg"]
+            .tank-skins-shop 
+                     each eliteSkin in eliteSkinItem
+                           figure 
+                               img(src=`assets/img/TankSkin/${eliteSkin}`, alt="")            
+                               p Price = 20000
+                               span 
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
                                    i.fa.fa-star
                                    i.fa.fa-star
                                 
-                               a(href="#") 
-                                    button(type="submit") Buy
+                                
+                               a(href="payment.html") 
+                                    button(type="submit") Buy                       
 
+            .tank-shop 
+                h3 Special Skins Shop Store 
+            - const specialItem=["sp-1.jpg","sp-2.jpg","sp-3.jpg","sp-4.jpg","sp-5.jpg","sp-6.jpg","sp-7.jpg","sp-9.jpg","sp-10.jpg","el-11.jpg","el-12.jpg","el-13.jpg"]
+            .tank-skins-shop 
+                     each special in specialItem
+                           figure 
+                               img(src=`assets/img/TankSkin/${special}`, alt="")            
+                               p Price = 20000
+                               span 
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                  
+                                
+                               a(href="payment.html") 
+                                    button(type="submit") Buy     
+
+            .tank-shop 
+                h3 Starlight Skins Shop Store 
+            - const StarlightItem=["st-1.jpg","st-2.jpg","st-3.jpg","st-4.jpg","st-5.jpg","st-6.jpg","st-7.jpg","st-9.jpg","st-10.jpg","st-8.jpg","el-12.jpg","el-13.jpg"]
+            .tank-skins-shop 
+                     each star in StarlightItem
+                           figure 
+                               img(src=`assets/img/TankSkin/${star}`, alt="")            
+                               p Price = 20000
+                               span 
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                  
+                                
+                               a(href="payment.html") 
+                                    button(type="submit") Buy     
+
+            .tank-shop 
+                h3 Material Skins Shop Store 
+            - const materialItem=["mt-1.jpg","mt-2.jpg","mt-3.jpg","mt-4.webp","mt-5.jpg","mt-6.jpg","mt-7.jpg","mt-9.jpg","mt-10.jpg","mt-8.jpg","el-12.jpg","el-13.jpg"]
+            .tank-skins-shop 
+                     each material in materialItem
+                           figure 
+                               img(src=`assets/img/TankSkin/${material}`, alt="")            
+                               p Price = 20000
+                               span 
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                   i.fa.fa-star
+                                  
+                                
+                               a(href="payment.html") 
+                                    button(type="submit") Buy     
 
    include partials/_footer
 

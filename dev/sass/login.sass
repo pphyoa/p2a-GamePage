@@ -1,0 +1,80 @@
+@use 'modules/_base'
+@import 'partials/_mixin'
+
+.login
+
+    padding-top: 100px
+
+.loginbox
+    width: 60%
+    margin: 50px auto
+    padding: 50px 0
+
+    @include MQ("768px")
+        width: 90%
+
+    form
+        width: 100%
+        background: linear-gradient(-135deg, rgb(32,8 ,21 ), rgb(4,2 ,31 )) 
+        box-shadow: 2px 4px 8px 0 #06043a , 0 6px 20px 10px #0b0327
+        border: 1px solid #160536
+        padding: 40px 0 0px
+        border-radius: 10px 
+        transition: all 0.5s ease    
+
+        &:hover
+            transform: scale(0.9,0.9)       
+
+        div
+            // background-color: #fff
+            text-align: center
+            
+            i
+                font-size: 40px
+                background: linear-gradient(-135deg, rgb(32,8 ,21 ), rgb(4,2 ,31 )) 
+                box-shadow: 2px 4px 8px 0 #06043a , 0 6px 20px 10px #0b0327
+                width: 130px
+                height: 90px
+                text-align: center                
+                padding-top: 40px
+                border-radius: 70px
+                top: -120px
+                position: relative
+                border: 1px solid #1f0849
+                color: #ebf0ac
+                opacity: 0.5
+
+
+        h1
+            color: #f0bcbc
+            font-size: 40px
+            text-align: center
+            top: -85px
+            position: relative
+
+        input
+            width: 60%
+            display: block
+            margin: 30px auto
+            font-size: 20px
+            padding: 15px
+            border-radius: 30px
+            border: none
+            outline: none
+            position: relative
+            top: -70px
+            background-color: #c4c1c1
+            box-shadow: 0px 5px 20px 0px rgba(100,101 ,104  )
+
+
+        .submit
+               background-color: #19065f
+               color: #fff
+               font-weight: bold
+               box-shadow: none
+
+               &:hover
+                background-color: #6d6969
+                color: #0c0000
+           
+            

@@ -1,8 +1,20 @@
-.webnav-slide.container 
+
+.webnav-slide
+    .webfixed.container
         img(src="assets/img/p1.png", alt="")
-        a(href="#") Skin Shop 
+        a(href="index.html") Skin Shop 
         ul 
           - const webnavItem= ["Home","All Heros","Selling Skins","Sign In"]
-            each websitenav in webnavItem
-                li 
-                   a(href="#")= websitenav
+            each websitenav,i in webnavItem
+                if (i == 0)
+                    li 
+                        a(href="index.html")= websitenav 
+                else if (i == 1)
+                    li 
+                        a(href="allTank.html")= websitenav
+                else if (i == 2)
+                    li 
+                        a(href="payment.html")= websitenav
+                else 
+                    li 
+                        a(href="login.html")= websitenav

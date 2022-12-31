@@ -1,0 +1,134 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  padding-top: 100px;
+}
+
+.loginbox {
+  width: 60%;
+  margin: 50px auto;
+  padding: 50px 0;
+}
+@media screen and (max-width: 768px) {
+  .loginbox {
+    width: 90%;
+  }
+}
+.loginbox form {
+  width: 100%;
+  background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(4, 2, 31));
+  box-shadow: 2px 4px 8px 0 #06043a, 0 6px 20px 10px #0b0327;
+  border: 1px solid #160536;
+  padding: 40px 0 0px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.loginbox form:hover {
+  transform: scale(0.9, 0.9);
+}
+.loginbox form div {
+  text-align: center;
+}
+.loginbox form div i {
+  font-size: 40px;
+  background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(4, 2, 31));
+  box-shadow: 2px 4px 8px 0 #06043a, 0 6px 20px 10px #0b0327;
+  width: 130px;
+  height: 90px;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 70px;
+  top: -120px;
+  position: relative;
+  border: 1px solid #1f0849;
+  color: #ebf0ac;
+  opacity: 0.5;
+}
+.loginbox form h1 {
+  color: #f0bcbc;
+  font-size: 40px;
+  text-align: center;
+  top: -85px;
+  position: relative;
+}
+.loginbox form input {
+  width: 60%;
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  position: relative;
+  top: -70px;
+  background-color: #c4c1c1;
+  box-shadow: 0px 5px 20px 0px rgb(100, 101, 104);
+}
+.loginbox form .submit {
+  background-color: #19065f;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: none;
+}
+.loginbox form .submit:hover {
+  background-color: #6d6969;
+  color: #0c0000;
+}
+
+/*# sourceMappingURL=login.css.map */

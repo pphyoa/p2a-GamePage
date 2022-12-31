@@ -57,6 +57,7 @@ a {
 
 nav {
   background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(4, 2, 31));
+  top: 0;
 }
 
 .mob-nav {
@@ -73,6 +74,11 @@ nav {
 @media screen and (max-width: 768px) {
   .mobile-nav {
     display: flex;
+    position: fixed;
+    background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(4, 2, 31));
+    width: 100%;
+    padding-bottom: 10px;
+    top: 0;
   }
 }
 .mobile-nav img {
@@ -96,12 +102,13 @@ nav {
 }
 
 .mob-nav-wrapper {
-  background-color: #201616;
-  min-width: 250px;
+  background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(4, 2, 31));
+  width: 100%;
   position: absolute;
   right: 0;
   top: 65px;
   transform: scale(1, 0);
+  text-align: center;
 }
 .mob-nav-wrapper li {
   line-height: 45px;
@@ -112,44 +119,52 @@ nav {
 }
 .mob-nav-wrapper li a {
   color: #fff;
-  padding-left: 40px;
+  letter-spacing: 3px;
   transition: 300ms;
+  font-size: 20px;
 }
 .mob-nav-wrapper li:hover a {
   padding-left: 70px;
 }
 
 .webnav-slide {
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(-135deg, rgb(32, 8, 21), rgb(29, 6, 31));
+}
+
+.webfixed {
   display: flex;
   padding: 30px 20px 0 20px;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .webnav-slide {
+  .webfixed {
     display: none;
   }
 }
-.webnav-slide img {
+.webfixed img {
   width: 50px;
   height: 50px;
 }
-.webnav-slide > a {
+.webfixed > a {
   flex: 1;
   font-size: 25px;
   padding-left: 10px;
   color: #ca3131;
 }
-.webnav-slide ul {
+.webfixed ul {
   display: flex;
 }
-.webnav-slide ul li {
+.webfixed ul li {
   padding-left: 30px;
 }
-.webnav-slide ul li a {
+.webfixed ul li a {
   font-size: 23px;
   color: #ca3131;
 }
-.webnav-slide ul li a::after {
+.webfixed ul li a::after {
   content: "";
   background-color: #3010e6;
   display: block;
@@ -159,23 +174,32 @@ nav {
   border-radius: 5px;
   transition: 300ms;
 }
-.webnav-slide ul li a:hover::after {
+.webfixed ul li a:hover::after {
   transform: scale(1, 1);
 }
 
+.slide-wrapper {
+  padding-top: 60px;
+}
 .slide-wrapper img {
   width: 90%;
   display: block;
-  margin: 30px auto 0;
+  margin: 60px auto 0;
   height: 70vh;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  .slide-wrapper img {
+    width: 100%;
+  }
 }
 
 .head-second {
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 .head-second img {
   background-color: #4f0b86;

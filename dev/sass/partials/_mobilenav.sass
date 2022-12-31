@@ -11,6 +11,11 @@
 
         @include MQ("768px")
             display: flex
+            position: fixed
+            background: linear-gradient(-135deg, rgb(32,8 ,21 ), rgb(4,2 ,31 ))
+            width: 100%
+            padding-bottom: 10px
+            top: 0
             
         img
             width: 40px
@@ -31,13 +36,15 @@
     &:checked
         &+.mob-nav-wrapper
             transform: scale(1,1)
+            
 .mob-nav-wrapper
-      background-color: #201616
-      min-width: 250px
+      background: linear-gradient(-135deg, rgb(32,8 ,21 ), rgb(4,2 ,31 ))
+      width: 100%
       position: absolute
       right: 0
       top: 65px
       transform: scale(1,0)
+      text-align: center
 
       li
         line-height: 45px
@@ -48,8 +55,9 @@
 
         a
             color: #fff
-            padding-left: 40px
+            letter-spacing: 3px
             transition: 300ms
+            font-size: 20px
 
         &:hover
             a

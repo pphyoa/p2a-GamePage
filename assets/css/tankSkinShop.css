@@ -56,7 +56,7 @@ a {
 }
 
 .tank-skin {
-  margin-top: 60px;
+  padding-top: 100px;
 }
 .tank-skin h3 {
   color: #dba40b;
@@ -64,6 +64,12 @@ a {
   padding: 10px 0 50px 30px;
   letter-spacing: 5px;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .tank-skin h3 {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
 }
 
 .tank-skins-shop {
@@ -73,6 +79,18 @@ a {
   grid-row-gap: 30px;
   padding: 0 10px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .tank-skins-shop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .tank-skins-shop {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+  }
 }
 .tank-skins-shop figure {
   height: 250px;
@@ -115,6 +133,7 @@ a {
   font-size: 9px;
   padding-left: 8px;
   color: #9e9b9b;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=tankSkinShop.css.map */

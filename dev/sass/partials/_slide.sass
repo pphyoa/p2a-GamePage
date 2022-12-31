@@ -1,18 +1,24 @@
 
 .slide-wrapper
+    padding-top: 60px
 
     img
         width: 90%
         display: block
-        margin: 30px auto 0
+        margin: 60px auto 0
         height: 70vh
         border-radius: 20px
         box-shadow: 0 4px 8px 0 rgba(0,0 ,0  ), 0 6px 20px 0 rgba(0, 0, 0 )
+
+        @include MQ("768px")
+            width: 100%
+            
 
 .head-second 
     text-align: center
     margin-top: 30px
     padding-top: 20px
+    margin-bottom: 30px
 
     img
         background-color: #4f0b86
