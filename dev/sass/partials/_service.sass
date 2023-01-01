@@ -20,7 +20,7 @@
 .p2aicon
     display: grid
     grid-template-columns: 1fr 1fr
-    grid-gap: 20px
+    grid-gap: 40px
     padding: 0 20px
     margin-top: 30px
     padding-bottom: 50px
@@ -38,11 +38,13 @@
         padding: 30px
         display: flex
         align-items: center
-        transform: scale(0.9,0.9)
         transition: all 0.3s ease
         
         &:hover
-            transform: scale(1,1)
+            transform: scale(1.1,1.1)
+
+        @include MQ("768px")
+              transform: none
 
         i
             font-size: 50px

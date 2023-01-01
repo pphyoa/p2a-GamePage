@@ -192,6 +192,7 @@ nav {
 @media screen and (max-width: 768px) {
   .slide-wrapper img {
     width: 100%;
+    height: 58vh;
   }
 }
 
@@ -600,7 +601,7 @@ button a {
 .p2aicon {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   padding: 0 20px;
   margin-top: 30px;
   padding-bottom: 50px;
@@ -618,11 +619,15 @@ button a {
   padding: 30px;
   display: flex;
   align-items: center;
-  transform: scale(0.9, 0.9);
   transition: all 0.3s ease;
 }
 .p2aicon .p2acard:hover {
-  transform: scale(1, 1);
+  transform: scale(1.1, 1.1);
+}
+@media screen and (max-width: 768px) {
+  .p2aicon .p2acard {
+    transform: none;
+  }
 }
 .p2aicon .p2acard i {
   font-size: 50px;
@@ -663,6 +668,7 @@ footer .footer-inner img {
 @media screen and (max-width: 768px) {
   footer .footer-inner img {
     width: 40%;
+    transform: none;
   }
 }
 footer .footer-inner img:hover {
