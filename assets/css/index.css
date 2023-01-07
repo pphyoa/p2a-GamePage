@@ -713,7 +713,7 @@ footer .footer-inner form input:focus {
   outline: none;
 }
 footer .footer-inner form button {
-  background-color: rgba(51, 68, 0, 0.5333333333) sf;
+  background-color: rgba(51, 68, 0, 0.5333333333) ;
   color: #fff;
   font-weight: bold;
   padding: 10px 40px;
